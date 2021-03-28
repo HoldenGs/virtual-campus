@@ -1,0 +1,26 @@
+{
+  "name": "virtual-campus",
+  "version": "1.0.0",
+  "description": "Virtual campus for student life",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoldenGs/virtual-campus.git"
+  },
+  "author": "HoldenGs, yuxinlyx5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoldenGs/virtual-campus/issues"
+  },
+  "homepage": "https://github.com/HoldenGs/virtual-campus#readme",
+  "dependencies": {
+    "ably": "^1.2.8",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "phaser": "^3.54.0"
+  }
+}
