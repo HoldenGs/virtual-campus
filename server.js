@@ -16,6 +16,8 @@ const ABLY_API_KEY = process.env.ABLY_API_KEY
 const PORT = process.env.PORT || 3000
 const GAME_TICKER_MS = 100
 
+document.body.style.background = "url('https://bancroft.berkeley.edu/Exhibits/physics/images/extending02_lg.jpg')";
+
 
 let peopleAccessingTheWebsite = 0
 let players = {}
