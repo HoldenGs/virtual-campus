@@ -95,7 +95,6 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
 
         function RemovePeer() {
             document.getElementById("peerVideo").remove();
-            document.getElementById("muteText").remove();
             if (client.peer) {
                 client.peer.destroy()
             }
@@ -110,12 +109,13 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
     })
     .catch(err => document.write(err))
 
-  class App extends Phaser.Game {
+    
+class App extends Phaser.Game {
     constructor () {
-      super(WINDOW_WIDTH, WINDOW_HEIGHT, Phaser.AUTO)
-      this.state.add('Game', Game)
-      this.state.start('Game')
+        super(WINDOW_WIDTH, WINDOW_HEIGHT, Phaser.AUTO)
+        this.state.add('Game', Game)
+        this.state.start('Game')
     }
-  }
+}
 
 const SimpleGame = new App()

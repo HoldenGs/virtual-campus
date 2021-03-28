@@ -21,7 +21,8 @@ io.on('connection', socket => {
     else
         this.emit('SessionActive')
     clients++;
-})
+  })
+  
   // When a player connects
   socket.on('new-player', state => {
 
